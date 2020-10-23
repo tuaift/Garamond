@@ -1,44 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
-
 html {
-  background: white;
-  position: relative;
-  height: 3253px;
+  background: #bbb;
 }
 
 body {
-  display: block;
   margin: 0 auto;
   padding: 0;
   width: 1280px;
-  height: 100%;
-	background-color: #0e0e0e;
-	overflow-x: hidden;
+  font-family: 'EB Garamond', serif;
+  background-color: #0e0e0e;
+  color: #e9e4de;
+  overflow-x: hidden;
 }
 
 section {
-  width: inherit;
-  height: 720px;
-  border-bottom: 1px solid white;
-}
-
-.header-G-medium {
-  position: absolute;
-  width: 188px;
-  height: 338px;
-  left: 591px;
-  top: 59px;
-  font-size: 259px;
-	color: #e9e4de;
-	font-family: 'EB Garamond', serif;
-  font-weight: 500;
-  line-height: 338px;
-}
-
-
-.fig {
   display: flex;
-  justify-content: center;
+  height: 720px;
+}
+
+h1 {
+  font-size: 132px;
+  font-style: italic;
+  margin-left: 110px;
+  margin-top: 94px;
+}
+
+h2 {
+  font-size: 90px;
+  font-style: italic;
+  margin: 0
+}
+
+.paragraph {
+  width: 273px;
 }
 
 .fig .face {
@@ -47,4 +40,332 @@ section {
   left: 36px;
   width: 42%;
   height: auto;
+}
+
+/* section 1 header style start */
+
+.header-eb p {
+  position: absolute;
+  left: 826px;
+  top: 42px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 84px;
+  line-height: 110px;
+}
+
+.header-G-medium {
+  position: absolute;
+  left: 871px;
+  top: 59px;
+  font-size: 259px;
+  font-weight: 500;
+  line-height: 338px;
+}
+
+.header-a-regular {
+  position: absolute;
+  left: 1057px;
+  top: 43px;
+  font-weight: 400;
+  font-size: 259px;
+  line-height: 338px;
+}
+
+.header-r-regular {
+  position: absolute;
+  left: 1171px;
+  top: 62px;
+  font-weight: 400;
+  font-size: 259px;
+  line-height: 338px;
+}
+
+.header-a-italic {
+  position: absolute;
+  left: 1267px;
+  top: 46px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 259px;
+  line-height: 338px;
+}
+
+.header-m-italic {
+  position: absolute;
+  left: 856px;
+  top: 206px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 259px;
+  line-height: 338px;
+}
+
+.header-o-regular {
+  position: absolute;
+  left: 1066px;
+  top: 190px;
+  font-weight: 400;
+  font-size: 259px;
+  line-height: 338px;
+}
+
+.header-n-regular {
+  position: absolute;
+  left: 1203px;
+  top: 206px;
+  font-weight: 400;
+  font-size: 259px;
+  line-height: 338px;
+}
+
+.header-d-regular {
+  position: absolute;
+  left: 1340px;
+  top: 190px;
+  font-weight: 400;
+  font-size: 259px;
+  line-height: 338px;
+}
+
+/* section 1 header style end */
+
+.p-brackets {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 18px;
+  width: 340px;
+  height: 200px;
+}
+
+.p-brackets .paragraph {
+  align-self: center;
+  margin-top: 22px;
+  margin-left: 12px;
+}
+
+.bracket {
+  font-size: 100px;
+  align-self: center;
+}
+
+.p-square-brackets {
+  position: absolute;
+  top: 500px;
+  left: 1121px;
+}
+
+.p-curly-brackets .paragraph {
+  margin-top: 14px;
+  margin-left: 12px;
+}
+
+.p-italic {
+  font-style: italic;
+}
+
+.artefacts {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.specimen {
+  position: absolute;
+  height: 45%;
+  width: auto;
+  right: 64px;
+}
+
+.types {
+  position: absolute;
+  height: 35%;
+  width: auto;
+  left: 64px;
+  bottom: 10px;
+}
+
+.artefacts .p-curly-brackets {
+  align-self: center;
+  width: 356px;
+  opacity: .3;
+}
+
+.description {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.description-garamond {
+  position: absolute;
+  top: 93px;
+  left: 375px;
+}
+
+.description-specimen {
+  position: absolute;
+  right: 106px;
+  top: 532px;
+}
+
+.description-types {
+  position: absolute;
+  bottom: 35px;
+  left: 430px;
+}
+
+.artefacts #hover-paragraph .p2,
+.artefacts #hover-paragraph .p3 {
+  display: none;
+}
+
+#hover-face {
+  position: absolute;
+  width: 400px;
+  height: 700px;
+  top: -530px;
+  left: 0;
+  display: block;
+}
+
+#hover-face:hover ~ #hover-paragraph,
+#hover-specimen:hover ~ #hover-paragraph,
+#hover-types:hover ~ #hover-paragraph {
+  opacity: 1;
+}
+
+#hover-specimen:hover ~ #hover-paragraph .p1 {
+  display: none;
+}
+
+#hover-specimen:hover ~ #hover-paragraph .p2 {
+  display: inline;
+}
+
+#hover-types:hover ~ #hover-paragraph .p1 {
+  display: none;
+}
+
+#hover-types:hover ~ #hover-paragraph .p3 {
+  display: inline;
+}
+
+section.styles-block {
+  flex-direction: column;
+  position: relative;
+}
+
+.p-citation {
+  font-size: 50px;
+  margin-left: 110px;
+  margin-top: 96px;
+  line-height: 51px;
+}
+
+.font-styles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 110px;
+}
+
+.p-style-types {
+  margin-top: 96px;
+  line-height: 53px;
+  text-align: right;
+}
+
+.name {
+  font-size: 26px;
+  align-self: flex-end;
+  margin-right: 110px;
+  margin-top: 64px;
+}
+
+.details {
+  position: relative;
+}
+
+.header-right {
+  position: absolute;
+  right: 110px;
+  top: 70px;
+}
+
+.details .p-brackets {
+  position: absolute;
+  top: 110px;
+  left: 173px;
+  width: 315px;
+}
+
+.anatomy {
+  height: 65%;
+  width: auto;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 270px;
+  margin-top: 118px;
+  text-align: center;
+}
+
+.glyphs {
+  position: relative;
+  height: 100$;
+}
+
+.glyphs .p-brackets {
+  position: absolute;
+  top: 170px;
+  right: 110px;
+}
+
+.glyphs h2 {
+  margin-top: 300px;
+  margin-left: 110px;
+}
+
+.glyphs img {
+  position: absolute;
+  height: 120%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 270px;
+  margin-top: 196px;
+  text-align: center;
+}
+
+.styles-block-italic .font-styles {
+  margin-top: 136px;
+}
+
+footer {
+  height: 300px;
+}
+
+footer img {
+  height: 30%;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 160px 64px 0 64px;
+}
+
+.footer-footer p {
+  font-size: 18px;
 }
